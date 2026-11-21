@@ -11,7 +11,7 @@ Designed to drop into any React + TypeScript project **without modifying `App.ts
 When evaluating translucent design tokens (such as `--color-warning-bg: rgba(253, 214, 99, 0.16)` on a dark theme surface), computing contrast against the raw RGB channels ignores how the browser actually renders the pixels on screen. To match real rendered pixels, this overlay models color stacking in three sequential layers:
 
 ### 1. The 3-Layer Alpha Compositing Model
-Before calculating relative luminance, semi-transparent colors are flattened using standard Porter-Duff `source-over` alpha blending ($C_{\text{out}} = \alpha C_{\text{fg}} + (1 - \alpha) C_{\text{bg}}$):
+Before calculating relative luminance, semi-transparent colors are flattened using standard Porter-Duff `source-over` alpha blending $C_{\text{out}} = \alpha C_{\text{fg}} + (1 - \alpha) C_{\text{bg}}$
 
 1. **Layer 1 — Base Backdrop (`backdropRgb`):** The opaque page canvas behind all translucent badges, cards, and overlays.
 2. **Layer 2 — Against Surface Token (`effectiveBgRgb`):** The selected **Against** token (e.g., `--color-warning-bg`) composited over `backdropRgb`. For example, `rgba(253, 214, 99, 0.16)` over a dark backdrop `rgb(30, 31, 34)` resolves to the actual rendered `rgb(66, 59, 41)`.
