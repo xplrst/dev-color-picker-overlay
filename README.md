@@ -131,7 +131,7 @@ import './dev-tools/bootstrap';
 
 ---
 
-## AI Studio Agent Implementation Prompt
+## AI Agent Implementation Prompt
 
 Copy and paste the prompt below into Google AI Studio to instruct the agent to scaffold and wire up the overlay automatically:
 
