@@ -30,7 +30,7 @@
   - [Scenario B: Standalone Static HTML / Legacy Pages (No React Root)](#scenario-b-standalone-static-html--legacy-pages-no-react-root)
   - [Scenario C: Micro-Frontends, Portals, or Shadow DOM Widgets](#scenario-c-micro-frontends-portals-or-shadow-dom-widgets)
   - [Scenario D: Storybook or Isolated Component Sandboxes](#scenario-d-storybook-or-isolated-component-sandboxes)
-- [AI Studio Agent Implementation Prompt](#-ai-studio-agent-implementation-prompt)
+- [AI Agent Implementation Prompt](#-ai-agent-implementation-prompt)
 
 </details>
 
@@ -276,9 +276,9 @@ import '../src/dev-tools/bootstrap';
 
 ---
 
-## 🤖 AI Studio Agent Implementation Prompt
+## 🤖 AI Agent Implementation Prompt
 
-Copy and paste the prompt below into Google AI Studio to instruct the agent to scaffold and wire up the overlay automatically:
+Copy and paste the prompt below to instruct your/the agent to scaffold and wire up the overlay automatically:
 
 ```text
 Implement the CSS Token & WCAG Contrast Studio developer overlay in this React + TypeScript project following these exact architectural and mathematical requirements:
